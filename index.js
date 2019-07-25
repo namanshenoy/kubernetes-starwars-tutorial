@@ -5,9 +5,9 @@ const axios = require('axios')
 const app = express()
 let otherUrl = null
 if (process.env.NAME === 'hello') {
-  otherUrl = 'http://' + process.env.GENERAL_SERVICE_SERVICE_HOST + ':3000'
+  otherUrl = 'http://general-service:3000'
 } else {
-  otherUrl = 'http://' + process.env.HELLO_SERVICE_SERVICE_HOST + ':3000'
+  otherUrl = 'http://hello-service:3000'
 }
 const message = process.env.MESSAGE
 
