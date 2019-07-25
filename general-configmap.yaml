@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: general-configmap
+data:
+  OTHER: "http://localhost:3000"
+  MESSAGE: "General Kenobi!"
+  PORT: "3000"
+  NAME: "general"
+  CURRENT_HOST: "0.0.0.0"
+

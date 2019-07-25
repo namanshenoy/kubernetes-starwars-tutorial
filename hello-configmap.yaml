@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hello-configmap
+data:
+  OTHER: "http://localhost:3000"
+  MESSAGE: "Hello there!"
+  NAME: "hello"
+  PORT: "3000"
+  CURRENT_HOST: "0.0.0.0"
+

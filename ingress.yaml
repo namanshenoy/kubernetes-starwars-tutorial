@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: general-grevious-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /kenobi
+        backend:
+          serviceName: hello-service
+          servicePort: 3000
+      - path: /grevious
+        backend:
+          serviceName: general-service
+          servicePort: 3000
+      - path: /*
+        backend:
+          serviceName: hello-service
+          servicePort: 3000
+  
